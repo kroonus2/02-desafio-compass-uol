@@ -67,7 +67,8 @@
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <!-- Esconder no desktop -->
+                    <li class="hidden sm:flex">
                         <button onclick="toggleMobileMenu()" class="btn-primary">
                             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                                 fill="#666666">
@@ -89,9 +90,47 @@
             </ul>
         </nav>
     </header>
+    <!-- Secção do  Carousel -->
     <section>
-        <div>
-            <img src="public/shop-hero-3-product-slide-2.png" alt="Main Banner" class="slide-img pt-3">
+        <div class="section-slide">
+            <!-- Imagens do Carrossel -->
+            <div class="slide fade">
+                <img src="public/slide-img-01.png" alt="Slide 1" class="slide-img pt-3">
+            </div>
+            <div class="slide fade">
+                <img src="public/slide-img-03.png" alt="Slide 3" class="slide-img pt-3">
+            </div>
+            <!-- Texto e Controles do carousel -->
+            <div class="slide-overlay">
+                <div>
+                    <h2 class="text-4xl">GROCERIES DELIVERY</h2>
+                    <p class="text-overlay">
+                        We know how large objects will act, but things on a small scale just do not act that
+                        way.
+                    </p>
+                </div>
+                <div class="flex justify-between">
+                    <button class="btn-primary" onclick="prevSlide()">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px"
+                            fill="#FFFFFF">
+                            <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+                        </svg>
+                    </button>
+                    <button class="btn-secondary p-3 font-bold text-lg">
+                        Start Now
+                    </button>
+                    <button class="btn-primary" onclick="nextSlide()">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px"
+                            fill="#FFFFFF">
+                            <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="carousel-indicators">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
         </div>
     </section>
 </body>
