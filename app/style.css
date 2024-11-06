@@ -18,6 +18,10 @@ img {
 .text-center {
   text-align: center;
 }
+.text-xs {
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
 .text-sm {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -61,6 +65,9 @@ img {
 }
 .cyan-300 {
   color: #75fbfd;
+}
+.bg-light-gray {
+  background-color: #fafafa;
 }
 
 /* Listas */
@@ -140,14 +147,25 @@ img {
 .p-0 {
   padding: 0;
 }
+.p-2 {
+  padding: 0.5rem;
+}
 .p-3 {
   padding: 0.75rem;
+}
+.p-20 {
+  padding: 5rem;
+}
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 /* classes proprias */
 .btn-primary {
   border: none;
   background-color: inherit;
+  cursor: pointer;
 }
 .btn-secondary {
   background-color: #23a6f0;
@@ -156,6 +174,27 @@ img {
   border-radius: 10px;
   width: 9rem; /* 160px */
   height: 3rem; /* 160px */
+  cursor: pointer;
+}
+.card-destaque {
+  position: relative;
+  margin: auto;
+  z-index: 20;
+  box-shadow: 2px;
+  background-color: white;
+  border: 1px solid #ececec;
+}
+.card-text {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+.img-destaque {
+  object-fit: none;
+}
+.title-destaque {
+  width: 90px;
 }
 
 /* Carousel - Indicadores do carousel */
@@ -163,6 +202,7 @@ img {
   height: 638px;
   width: 100%;
   object-fit: none;
+  margin: 0;
 }
 .section-slide {
   position: relative;
@@ -234,12 +274,7 @@ img {
   .sm\:flex {
     display: flex !important;
   }
-}
-@media (min-width: 641px) {
-  .hidden-sm {
-    display: none;
-  }
-  .sm\:hidden {
-    display: flex;
+  .sm\:flex-col {
+    flex-direction: column;
   }
 }
