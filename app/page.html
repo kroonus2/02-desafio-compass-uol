@@ -98,7 +98,7 @@
                 <img src="public/slide-img-01.png" alt="Slide 1" class="slide-img pt-3">
             </div>
             <div class="slide fade">
-                <img src="public/slide-img-03.png" alt="Slide 3" class="slide-img pt-3">
+                <img src="public/slide-img-04.webp" alt="Slide 3" class="slide-img pt-3">
             </div>
             <!-- Texto e Controles do carousel -->
             <div class="slide-overlay">
@@ -134,8 +134,8 @@
         </div>
     </section>
     <!-- ;Secção de Itens em destaque -->
-    <section>
-        <div class="flex sm:flex-col justify-center gap-2 bg-light-gray py-20">
+    <section class=" bg-light-gray ">
+        <div class="flex sm:flex-col justify-center gap-2 py-20 " style="max-width: 980px; margin: auto;">
             <div class="card-destaque">
                 <div class="flex flex-col card-text">
                     <span class="text-sm gray-500 p-2">Your Space</span>
@@ -546,8 +546,8 @@
                                 <span class="text-xs gray-500">10 comments</span>
                             </div>
                         </div>
-                        <div class="flex justify-center gap-3 p-3">
-                            <span class="text-sm gray-500 font-bold">Learn</span>
+                        <div class="flex gap-3 p-3">
+                            <span class="text-sm gray-500 font-bold" style="padding-left: 4px;">Learn More</span>
                             <img src="public/svg-icon-03.png" alt="">
                         </div>
                     </div>
@@ -579,8 +579,8 @@
                                 <span class="text-xs gray-500">10 comments</span>
                             </div>
                         </div>
-                        <div class="flex justify-center gap-3 p-3">
-                            <span class="text-sm gray-500 font-bold">Learn</span>
+                        <div class="flex gap-3 p-3">
+                            <span class="text-sm gray-500 font-bold" style="padding-left: 4px;">Learn More</span>
                             <img src="public/svg-icon-03.png" alt="">
                         </div>
                     </div>
@@ -612,8 +612,8 @@
                                 <span class="text-xs gray-500">10 comments</span>
                             </div>
                         </div>
-                        <div class="flex justify-center gap-3 p-3">
-                            <span class="text-sm gray-500 font-bold">Learn</span>
+                        <div class="flex gap-3 p-3">
+                            <span class="text-sm gray-500 font-bold" style="padding-left: 4px;">Learn More</span>
                             <img src="public/svg-icon-03.png" alt="">
                         </div>
                     </div>
@@ -622,6 +622,69 @@
         </div>
     </section>
     <!-- Footer -->
+    <footer class="pt-20">
+        <div class="bg-blue-900 p-6 text-white">
+            <div class="flex sm:flex-col gap-14 justify-around">
+                <div class="flex flex-col">
+                    <h3 style="margin: 0;">Consulting Agency For Your Business</h3>
+                    <span class="text-xs">the quick fox jumps over the lazy dog</span>
+                </div>
+                <div class="flex justify-center">
+                    <form action="" style="display: flex; align-items: center;" onsubmit="return validateEmail()">
+                        <input type="email" placeholder="Your Email" class="input-footer" id="email" required>
+                        <button type="submit" class="btn-input">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <div class="flex sm:flex-col justify-around pt-6">
+                    <ul class="list-none">
+                        <li class="pb-4">Company info</li>
+                        <li class="pb-2 text-sm">About Us</li>
+                        <li class="pb-2 text-sm">Carrier</li>
+                        <li class="pb-2 text-sm">We are hiring</li>
+                        <li class="pb-2 text-sm">Blog</li>
+                    </ul>
+                    <ul class="list-none">
+                        <li class="pb-4">Legal</li>
+                        <li class="pb-2 text-sm">About Us</li>
+                        <li class="pb-2 text-sm">Carrier</li>
+                        <li class="pb-2 text-sm">We are hiring</li>
+                        <li class="pb-2 text-sm">Blog</li>
+                    </ul>
+                    <ul class="list-none">
+                        <li class="pb-4">Features</li>
+                        <li class="pb-2 text-sm">Business Markting</li>
+                        <li class="pb-2 text-sm">User Analytics</li>
+                        <li class="pb-2 text-sm">Live Chat</li>
+                        <li class="pb-2 text-sm">Unlimited Support</li>
+                    </ul>
+                    <ul class="list-none">
+                        <li class="pb-4">Resources</li>
+                        <li class="pb-2 text-sm">IOS & Android</li>
+                        <li class="pb-2 text-sm">Watch a Demo</li>
+                        <li class="pb-2 text-sm">Customers</li>
+                        <li class="pb-2 text-sm">API</li>
+                    </ul>
+                    <ul class="list-none">
+                        <li class="pb-4">Resources</li>
+                        <li class="pb-2 text-sm"><img src="public/svg-icon-04.png" alt="" width="24" height="100%">
+                            (480)
+                            555-0132</li>
+                        <li class="pb-2 text-sm"><img src="public/svg-icon-05.png" alt="" width="24" height="100%"> 4567
+                            Washington Ave.</li>
+                        <li class="pb-2 text-sm"><img src="public/svg-icon-06.png" alt="" width="24" height="100%">
+                            debra.holt@example.com</li>
+                    </ul>
+                </div>
+                <div class="flex sm:flex-col justify-between pt-20 text-center">
+                    <span class="text-lg" style="max-width: 260px; margin: 0;">Made With Love By Finland All Right
+                        Reserved</span>
+                    <img src="public/svg-icons-01.png" alt="" class="pt-4">
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

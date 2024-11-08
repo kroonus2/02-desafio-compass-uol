@@ -61,6 +61,9 @@ img {
 }
 
 /* Cores */
+.text-white {
+  color: white;
+}
 .blue-400 {
   color: #23a6f0;
 }
@@ -81,6 +84,9 @@ img {
 }
 .bg-light-gray {
   background-color: #fafafa;
+}
+.bg-blue-900 {
+  background-color: #252b42;
 }
 
 /* Listas */
@@ -180,6 +186,9 @@ img {
 }
 .pt-20 {
   padding-top: 5rem;
+}
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 .pb-3 {
   padding-bottom: 0.75rem;
@@ -328,12 +337,41 @@ img {
 .card-product {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
+/* Estilos para o campo de input */
+.input-footer {
+  width: 200px; /* Ajuste o tamanho conforme necessário */
+  height: 42px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-left: 1rem;
+  font-size: 1rem;
+  color: #6b7280; /* Cor cinza para o placeholder */
+  background-color: #f4f4f4; /* Fundo branco suave */
+}
+
+/* Estilos para o botão */
+.btn-input {
+  height: 45px;
+  border: none;
+  background-color: #23a6f0; /* Azul brilhante para o botão */
+  color: white;
+  font-weight: bold;
+  padding: 0 1.5rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-input:hover {
+  background-color: #1e90db; /* Efeito de hover para o botão */
+}
 
 /* Carousel - Indicadores do carousel */
 .slide-img {
   height: 638px;
   width: 100%;
-  object-fit: none;
+  object-fit: cover;
   margin: 0;
 }
 .section-slide {
