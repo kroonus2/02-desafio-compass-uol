@@ -437,41 +437,52 @@ img {
 }
 
 /* Resposividades */
-@media (max-width: 640px) {
-  .sm\:hidden {
+@media (max-width: 1024px) {
+  .lg\:hidden {
     display: none;
   }
-  .sm\:flex {
+  .lg\:flex {
     display: flex !important;
   }
-  .sm\:flex-col {
+  .lg\:flex-col {
     flex-direction: column;
   }
-  .sm\:flex-col-reverse {
+  .lg\:flex-col-reverse {
     flex-direction: column-reverse;
   }
-  .sm\:grid-cols-1 {
+  .lg\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .sm\:baner-img {
+  .lg\:baner-img {
     height: 500px;
     width: 415px;
     object-fit: cover;
     margin: auto;
   }
-  .sm\:content-number-size {
+  .lg\:content-number-size {
     width: 240px;
   }
-  .sm\:item-product-img {
+  .lg\:item-product-img {
     width: 320px;
     height: 380px;
     margin: auto;
     object-fit: cover;
   }
+  .lg\:img-product {
+    border: solid 1px #8ec2f2;
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .text-banner {
+    top: 6%;
+    left: 17%; /* Tentar deixar fixo mesmo variando o tamanho da tela  */
+  }
 }
 
-@media (min-width: 768px) {
-  .md\:hidden {
+@media (min-width: 1024px) {
+  .lg\:hidden-lg {
     display: none;
   }
 }
