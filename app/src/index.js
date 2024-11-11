@@ -55,7 +55,7 @@ function currentSlide(index) {
 function startAutoSlide() {
   setInterval(() => {
     nextSlide();
-  }, 5000);
+  }, 8000);
 }
 
 // Função para verificar o formato do email e mostrar uma confirmação

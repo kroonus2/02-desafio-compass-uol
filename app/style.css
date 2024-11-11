@@ -256,15 +256,26 @@ img {
   background-color: inherit;
   cursor: pointer;
 }
+/* .btn-primary:hover {
+  border: solid 2px #1e90db;
+  border-radius: 40%;
+} */
 .btn-secondary {
   background-color: #23a6f0;
   color: white;
   border: none;
-  border-radius: 10px;
-  width: 9rem; /* 160px */
-  height: 3rem; /* 160px */
+  border-radius: 8px;
+  width: 9rem;
+  height: 3rem;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
+
+.btn-secondary:hover {
+  background-color: transparent;
+  border: 2px solid #23a6f0;
+}
+
 .btn-icon {
   border: none;
   background-color: inherit;
@@ -277,10 +288,16 @@ img {
 .card-destaque {
   position: relative;
   margin: auto;
-  z-index: 20;
-  box-shadow: 2px;
+  z-index: 1;
   background-color: white;
   border: solid 1px #ececec;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Transição suave para o efeito */
+}
+.card-destaque:hover {
+  z-index: 10;
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 .card-text {
   position: absolute;
@@ -313,6 +330,22 @@ img {
 }
 .img-product {
   border: solid 1px #8ec2f2;
+  max-width: fit-content;
+}
+.item-product {
+  position: relative;
+  background-color: white;
+  border: solid 1px #ececec;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.item-product:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+  border-color: #23a6f0;
+  cursor: pointer;
 }
 .content-text-size {
   width: 100%;
@@ -336,25 +369,39 @@ img {
 }
 .card-product {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 2px;
 }
-/* Estilos para o campo de input */
+.card-product:hover {
+  transform: scale(1.03); /* Aumenta levemente o card */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.span-categories span {
+  color: #6b7280; /* Cor inicial (gray-500) */
+  transition: color 0.3s ease; /* Transição suave */
+}
+.span-categories span:hover {
+  color: #1e90db; /* Cor desejada no hover */
+  cursor: pointer;
+}
+
+/* Footer e Forms */
 .input-footer {
-  width: 200px; /* Ajuste o tamanho conforme necessário */
+  width: 200px;
   height: 42px;
   border: none;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   padding-left: 1rem;
   font-size: 1rem;
-  color: #6b7280; /* Cor cinza para o placeholder */
-  background-color: #f4f4f4; /* Fundo branco suave */
+  color: #6b7280;
+  background-color: #f4f4f4;
 }
-
-/* Estilos para o botão */
 .btn-input {
   height: 45px;
   border: none;
-  background-color: #23a6f0; /* Azul brilhante para o botão */
+  background-color: #23a6f0;
   color: white;
   font-weight: bold;
   padding: 0 1.5rem;
@@ -362,9 +409,15 @@ img {
   border-bottom-right-radius: 5px;
   cursor: pointer;
 }
-
 .btn-input:hover {
   background-color: #1e90db; /* Efeito de hover para o botão */
+}
+.menu-list li a:hover {
+  color: #23a6f0;
+}
+.list-footer li:hover {
+  color: #1e90db;
+  cursor: pointer;
 }
 
 /* Carousel - Indicadores do carousel */
@@ -372,7 +425,6 @@ img {
   height: 638px;
   width: 100%;
   object-fit: cover;
-  margin: 0;
 }
 .section-slide {
   position: relative;
@@ -404,7 +456,7 @@ img {
   background-color: white;
   opacity: 0.5;
   display: inline-block;
-  transition: background-color 0.6s ease, opacity 0.6s ease;
+  transition: background-color 0.9s ease, opacity 0.6s ease;
 }
 .active {
   opacity: 1;
@@ -425,7 +477,7 @@ img {
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
 }
 @keyframes fade {
   from {
